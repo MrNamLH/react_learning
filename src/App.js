@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 // import { createStore } from 'redux';
 // import logo from './logo.svg';
-import "./App.css";
-import HelloWord from "./HelloWorld";
-import ButtonGroup from "./ButtonGroup";
-import store from "./store";
+import './App.css';
+import HelloWord from './HelloWorld';
+import ButtonGroup from './ButtonGroup';
+import store from './store';
 
 class App extends Component {
     render() {
@@ -12,8 +12,8 @@ class App extends Component {
             <HelloWord key={1} tech={store.getState().tech} />,
             <ButtonGroup
                 key={2}
-                technologies={["React", "Elm", "React-Redux"]}
-            />
+                technologies={['React', 'Elm', 'React-Redux']}
+            />,
         ];
         /* <div className="App">
                 <header className="App-header">

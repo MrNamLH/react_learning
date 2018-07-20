@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class HelloWorld extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            tech: props.tech
+            tech: props.tech,
         };
     }
 
@@ -16,11 +16,11 @@ class HelloWorld extends Component {
 }
 
 HelloWorld.propTypes = {
-    tech: PropTypes.string
+    tech: PropTypes.string,
 };
 
 HelloWorld.defaultProps = {
-    tech: "defaut Tech"
+    tech: 'defaut Tech',
 };
 
 export default HelloWorld;

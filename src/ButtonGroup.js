@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 // import { Button } from 'react-bootstrap';
-import shortId from "shortid";
-import store from "./store";
-import setTechnology from "./actions";
+import shortId from 'shortid';
+import store from './store';
+import setTechnology from './actions';
 // import * as actions from './actions';
 // import { render } from './index';
 
