@@ -7,15 +7,15 @@ import ButtonGroup from './ButtonGroup';
 import store from './store';
 
 class App extends Component {
-    render() {
-        return [
-            <HelloWord key={1} tech={store.getState().tech} />,
-            <ButtonGroup
-                key={2}
-                technologies={['React', 'Elm', 'React-Redux']}
-            />,
-        ];
-        /* <div className="App">
+	render() {
+		return [
+			<HelloWord key={1} tech={store.getState().tech} />,
+			<ButtonGroup
+				key={2}
+				technologies={['React', 'Elm', 'React-Redux']}
+			/>,
+		];
+		/* <div className="App">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
                     <h1 className="App-title">Welcome to React</h1>
@@ -28,7 +28,7 @@ class App extends Component {
                     />
                 </p>
             </div> */
-    }
+	}
 }
 
 export default App;

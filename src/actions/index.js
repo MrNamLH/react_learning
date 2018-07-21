@@ -1,6 +1,6 @@
 export default function setTechnology(tech) {
-    return {
-        type: 'SET_TECHNOLOGY',
-        tech,
-    };
+	return {
+		type: 'SET_TECHNOLOGY',
+		tech,
+	};
 }
