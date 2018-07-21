@@ -31,7 +31,8 @@
         "no-useless-constructor": "off",
         "no-use-before-define": "off",
         "no-console": "off",
-        "react/destructuring-assignment": "off"
+        "react/destructuring-assignment": "off",
+        "react/no-render-return-value": "off"
     },
     "parserOptions": {
         "ecmaVersion": 6,

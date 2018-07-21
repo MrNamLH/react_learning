@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import logo from '../assets/logo.svg';
 
 class HelloWorld extends Component {
 	constructor(props) {
@@ -11,7 +12,13 @@ class HelloWorld extends Component {
 	}
 
 	render() {
-		return <div>Hello {this.state.tech}</div>;
+		return (
+			<header className="App-header">
+				<img src={logo} className="App-logo" alt="logo" />
+				<h1 className="App-title">{this.state.tech}</h1>
+			</header>
+		);
+		// return <div>Hello {this.state.tech}</div>;
 	}
 }
 
@@ -20,7 +27,7 @@ HelloWorld.propTypes = {
 };
 
 HelloWorld.defaultProps = {
-	tech: 'defaut Tech',
+	tech: 'default Tech',
 };
 
 export default HelloWorld;
