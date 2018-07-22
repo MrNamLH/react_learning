@@ -1,0 +1,42 @@
+#helloWorldApp {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#helloWorldApp .App {
+    text-align: center;
+}
+
+#helloWorldApp .App .App-header {
+    background-color: #222;
+    padding: 10px;
+    color: white;
+}
+
+#helloWorldApp .App .App-header .App-logo {
+    animation: App-logo-spin infinite 10s
+        cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 80px;
+}
+
+#helloWorldApp .App .App-header .App-title {
+    font-size: 3em;
+}
+
+#helloWorldApp .App .App-intro {
+    font-size: large;
+    margin-top: 10px;
+}
+
+#helloWorldApp .App .App-intro .group-btn {
+    margin: 0 2px;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

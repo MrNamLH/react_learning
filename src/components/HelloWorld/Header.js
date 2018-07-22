@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import logo from '../assets/logo.svg';
+import logo from '../../assets/logo.svg';
 
-class HelloWorld extends Component {
+class Header extends Component {
 	constructor(props) {
 		super(props);
 
@@ -15,19 +15,18 @@ class HelloWorld extends Component {
 		return (
 			<header className="App-header">
 				<img src={logo} className="App-logo" alt="logo" />
-				<h1 className="App-title">{this.state.tech}</h1>
+				<h1 className="App-title">Hello {this.state.tech}</h1>
 			</header>
 		);
-		// return <div>Hello {this.state.tech}</div>;
 	}
 }
 
-HelloWorld.propTypes = {
+Header.propTypes = {
 	tech: PropTypes.string,
 };
 
-HelloWorld.defaultProps = {
-	tech: 'default Tech',
+Header.defaultProps = {
+	tech: 'Java',
 };
 
-export default HelloWorld;
+export default Header;

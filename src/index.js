@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/index.css';
+import HelloWorldApp from './HelloWorldApp';
+import registerServiceWorker from './registerServiceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import './assets/common.css';
 
-const rootElement = document.getElementById('root');
+const helloWorldAppElement = document.getElementById('helloWorldApp');
 
-const render = () => ReactDOM.render(<App />, rootElement);
+const render = () => ReactDOM.render(<HelloWorldApp />, helloWorldAppElement);
 render();
 
 registerServiceWorker();

@@ -1,10 +1,7 @@
 import React from 'react';
-// import { Button } from 'react-bootstrap';
 import shortId from 'shortid';
-import store from '../redux/store';
-import setTechnology from '../redux/actions';
-// import * as actions from './actions';
-// import render from './index';
+import store from '../../redux/store';
+import setTechnology from '../../redux/actions';
 
 const ButtonGroup = ({ technologies }) => (
 	<div className="App-intro">
@@ -14,7 +11,7 @@ const ButtonGroup = ({ technologies }) => (
 					type="button"
 					data-tech={tech}
 					key={shortId.generate()}
-					className="btn-success"
+					className="btn-success group-btn"
 					onClick={dispatchBtnAction}
 				>
 					{tech}
