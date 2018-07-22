@@ -7,7 +7,13 @@
     "globals": {
         "arguments": true
     },
-    "extends": ["react-app", "airbnb", "prettier", "prettier/react"],
+    "extends": [
+        "react-app",
+        "airbnb",
+        "prettier",
+        "prettier/react",
+        "prettier/flowtype"
+    ],
     "plugins": ["react", "jsx-a11y", "import", "prettier"],
     "rules": {
         "jsx-a11y/href-no-hash": 0,

@@ -24,7 +24,6 @@ const ButtonGroup = ({ technologies }) => (
 function dispatchBtnAction(e) {
 	const { tech } = e.target.dataset;
 	store.dispatch(setTechnology(tech));
-	// store.subscribe(render);
 }
 
 export default ButtonGroup;
