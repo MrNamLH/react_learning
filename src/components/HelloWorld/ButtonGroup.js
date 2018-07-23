@@ -1,12 +1,12 @@
 import React from 'react';
 import shortId from 'shortid';
-import store from '../../redux/store';
-import setTechnology from '../../redux/actions';
+import { helloWordStore } from '../../redux/store';
+import { setTechnology } from '../../redux/actions';
 
 const ButtonGroup = ({ technologies }) => (
 	<div className="App-intro">
 		<div>
-			{technologies.map((tech, i) => (
+			{technologies.map(tech => (
 				<button
 					type="button"
 					data-tech={tech}
@@ -23,7 +23,7 @@ const ButtonGroup = ({ technologies }) => (
 
 function dispatchBtnAction(e) {
 	const { tech } = e.target.dataset;
-	store.dispatch(setTechnology(tech));
+	helloWordStore.dispatch(setTechnology(tech));
 }
 
 export default ButtonGroup;

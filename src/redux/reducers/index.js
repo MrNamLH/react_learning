@@ -1,13 +1,6 @@
-export default (state, action) => {
-	console.log(action);
+import { combineReducers } from 'redux';
+import helloWorldReducer from './helloWorldReducer';
 
-	switch (action.type) {
-		case 'SET_TECHNOLOGY':
-			return {
-				...state,
-				tech: action.tech,
-			};
-		default:
-			return state;
-	}
-};
+export default combineReducers({
+	helloWorldReducer,
+});

@@ -1,6 +1,6 @@
-export default function setTechnology(tech) {
-	return {
-		type: 'SET_TECHNOLOGY',
-		tech,
-	};
-}
+import setTechnology from './helloWorldAction';
+
+// TODO: for test
+const skypeAction = {};
+
+export { setTechnology, skypeAction };

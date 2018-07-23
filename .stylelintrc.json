@@ -1,0 +1,10 @@
+{
+    "extends": "stylelint-config-standard",
+    "rules": {
+        "indentation": 4,
+        "function-comma-newline-after": "always-multi-line",
+        "function-comma-space-after": "always-single-line",
+        "declaration-colon-newline-after": "always-multi-line",
+        "value-list-comma-newline-after": null
+    }
+}

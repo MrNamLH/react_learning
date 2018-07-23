@@ -1,7 +1,5 @@
-import { createStore } from 'redux';
-import reducers from '../reducers';
+import helloWordStore from './helloWorldStore';
 
-const initialState = { tech: 'Redux' };
-const store = createStore(reducers, initialState);
+const skypeStore = {};
 
-export default store;
+export { helloWordStore, skypeStore };
